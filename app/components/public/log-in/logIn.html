@@ -1,0 +1,16 @@
+<form name='form' ng-submit="vm.login()" role="form">
+<h3>Login</h3>
+
+<div class="...">
+    <div class="col-xs-12 col-sm-6">
+        <input type="text" class="..." placeholder="email address" ng-model="vm.user.email" auto-focus required>
+        <input type="password" class="..." placeholder="Password" ng-model="vm.user.password" my-enter='vm.login()' required>
+
+        <!-- <span class="..." ng-if="!firstAttempt">Invalid email or password</span>
+        <span class="..." ng-if="firstAttempt"></span> -->
+
+        <button ng-disabled="form.$invalid" type='submit'>Login</button>
+        <!-- <a href="#!/sign-up" class="btn btn-link">Signup</a> -->
+    </div>
+</div>
+</form>

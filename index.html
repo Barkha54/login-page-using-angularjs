@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>MyApp</title>
+
+        <!-- Bootstrap Core CSS -->
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css">-->
+        <!-- <link rel="stylesheet" href="assets/libs/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css"> -->
+
+        <!-- Custom CSS -->
+    </head>
+    <body>
+        <!-- Page Header -->
+        <header id="navigation-bar">
+                <div class="..." ng-click="navCollapsed = true">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li><a ui-sref="protected/welcome">private page</a></li> -->
+                        <li><a ui-sref="help-general">Help</a></li>
+                        <li><a ui-sref="sign-up">Register</a></li>
+                        <li><a ui-sref="log-in">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Page Body -->
+        <div ui-view></div>
+
+        <!-- AngularJS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+        <!-- Angular UI Bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.2/ui-bootstrap-tpls.min.js"></script>
+
+        <!--  Application JavaScript files -->
+        <script src="app/components/public/app-module.js"></script>
+        <script src="app/components/public/app-directive.js"></script>
+        <script src="app/components/public/app-route.js"></script>
+        <script src="app/components/public/authentication.service.js"></script>
+        <script src="app/components/public/flash.service.js"></script>
+        <script src="app/components/public/user.service.local-storage.js"></script>
+
+
+        <!-- JavaScripts for Login page -->
+        <script src="app/components/public/home/home-controller.js"></script>
+        <script src="app/components/public/help/help-controller.js"></script>
+        <script src="app/components/public/sign-up/signup-controller.js"></script>
+        <script src="app/components/public/log-in/logIn-controller.js"></script>
+        <script src="app/components/public/log-in/logIn-factory.js"></script>
+    </body>
+</html>
